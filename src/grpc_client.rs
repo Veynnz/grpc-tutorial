@@ -7,8 +7,6 @@ use services::{payment_service_client::PaymentServiceClient, PaymentRequest,
     transaction_service_client::TransactionServiceClient, TransactionRequest,
     chat_service_client::ChatServiceClient, ChatMessage};
 
-
-
 pub mod services {
     tonic::include_proto!("services");
 }
@@ -58,7 +56,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             }
         }
     });
-    
+
     let request = tonic::Request::new(ReceiverStream::new(rx));
     let mut response_stream = client.chat(request).await?.into_inner();
     
