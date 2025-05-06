@@ -50,7 +50,7 @@ handle more complex payment processing logic?
 architecture and design of distributed systems, particularly in terms of interoperability with
 other technologies and platforms?
 
-        `gRPC` changes how services talk to each other. It simplifies communication with streaming and async support. It also uses strict, fast communication and works across languages. On the downside, it’s more complex than `REST` and needs good planning for versioning and testing.
+    `gRPC` changes how services talk to each other. It simplifies communication with streaming and async support. It also uses strict, fast communication and works across languages. On the downside, it’s more complex than `REST` and needs good planning for versioning and testing.
 
 8. What are the advantages and disadvantages of using HTTP/2, the underlying protocol for
 gRPC, compared to HTTP/1.1 or HTTP/1.1 with WebSocket for REST APIs?
@@ -69,7 +69,7 @@ gRPC, compared to HTTP/1.1 or HTTP/1.1 with WebSocket for REST APIs?
 9.  How does the request-response model of REST APIs contrast with the bidirectional streaming
 capabilities of gRPC in terms of real-time communication and responsiveness?
 
-        `REST` only supports one request and one response. `gRPC` allows streaming, so it’s better for real-time apps. With `gRPC`, the server or client can keep sending updates without new requests.
+    `REST` only supports one request and one response. `gRPC` allows streaming, so it’s better for real-time apps. With `gRPC`, the server or client can keep sending updates without new requests.
 
 10. What are the implications of the schema-based approach of gRPC, using Protocol Buffers,
 compared to the more flexible, schema-less nature of JSON in REST API payloads?
